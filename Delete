@@ -1,0 +1,17 @@
+int ListDelete_Sq(SqList &L,int i,char &e)  {  
+  int * p;  
+  int * q;  
+   
+  if(i<1||i>L.length)  
+  return ERROR;//特殊情况的处理  
+   
+  p=&(L.elem[i-1]);  
+  e=*p;  
+  q=L.elem+L.length-1;     
+   for(p;p<q;p++）  
+  {  
+    *p=*(p+1);  
+  }//i之后的元素依次左移  
+  L.length--;  
+  return true;  
+}  
