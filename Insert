@@ -1,0 +1,17 @@
+template<class T>//顺序表的元素类型为T
+Insert(const int p , const T value){
+  If(curLen >= maxSize){//检查顺序表是否溢出
+cout << ” The List is overflow ” << endl;
+return false;
+}
+  If(p < 0 || p > curLen){//检查插入位置是否合法
+cout << ” Insertion point is illeagal ” << endl;  
+}
+For(int i = curLen ; i > p ; i--){
+  arrayList [i] = array [i-1];
+//从表尾curLen-1处向后移动一个位置直到插入位置p
+}
+arrayList [p] = value;//位置p处插入元素
+curLen++;//表的实际长度增加1
+return true;
+}
