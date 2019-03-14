@@ -11,7 +11,7 @@ bool Insert(const int p , const T value){
       arrayList [i] = array [i-1];
     //从表尾curLen-1处向后移动一个位置直到插入位置p
     }
-    arrayList [p] = value;//位置p处插入元素
-    curLen++;//表的实际长度增加1
-    return true;
+  arrayList [p] = value;//位置p处插入元素
+  curLen++;//表的实际长度增加1
+  return true;
 }
